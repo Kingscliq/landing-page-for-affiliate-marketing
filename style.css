@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+body{
+    font-family: 'Poppins', "Helvetica Neue", "Calibri Light", 'Roboto', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px
+
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    grid-auto-rows: minmax(100px, auto);
+    width: 100%;
+    
+
+}
+.main article{
+    margin-left: 40px;
+    animation: main-article;
+    animation-duration: 2s;
+    width: 500px
+}
+@keyframes main-article{
+    0%{margin-left: -1500px}
+    100%{margin-left: 60px}
+}
+.main figure{
+    animation: main-img;
+    animation-duration: 2s;
+}
+@keyframes main-img{
+    0%{margin-right: -200px}
+    100%{margin-right: 50px}
+}
+.main-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-info article{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    justify-items: center;
+    text-align: center;
+    grid-gap: 20px;
+    margin: 30px auto;
+    animation: art;
+    animation-duration: 3.5s
+    
+
+}
+@keyframes art{
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+.main-info div{
+    border: 1px solid #333;
+    height: 300px;
+    width: auto;
+    padding: 20px
+
+}
+.main-info footer button{
+    display: inline-block;
+    margin-bottom: 30px
+}
+
+.main-info header{
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    animation-name: heading;
+    animation-duration: 2s;
+    
+}
+@keyframes heading{
+    0%{margin-top: -60px; opacity: 0.2}
+    100%{margin-top:60px; opacity: 1}
+}
+.main-info footer{
+    display: inline-block;
+    margin-top: 30px
+}
+.main-footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+    justify-items: center;
+    background: #333;
+    color: white;
+    padding: 20px
+}
+.main-footer ul{
+    display: inline-block;
+    margin-top: 20px;
+    list-style-type: none
+}
+.main-footer a{
+    color: #ccc;
+    text-decoration: none;
+    font-size: .78rem;
+    
+}
+.main-footer a:hover{
+    text-decoration: underline;
+}
+.btn{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    background: rgb(32, 83, 179);
+    color: #ccc;
+    font-size: 1.5rem;
+    opacity: 1;
+    transition: opacity 0.5s;
+
+
+}
+.btn:hover{
+    opacity: 0.8
+}
+.main article h1{
+    font-size: 2rem;
+}
+#btn-nav{
+    font-size: .89rem
+}
+.main article div button{
+    margin-top: 20px;
+
+}
+
