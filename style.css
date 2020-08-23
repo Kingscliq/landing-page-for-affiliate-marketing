@@ -27,7 +27,7 @@ nav{
     margin-left: 40px;
     animation: main-article;
     animation-duration: 2s;
-    width: 500px
+    max-width: 500px
 }
 @keyframes main-article{
     0%{margin-left: -1500px}
@@ -140,4 +140,52 @@ nav{
     margin-top: 20px;
 
 }
+.invisible{
+    display: none
+}
 
+@media only screen and (max-width: 768px){
+    .main-info article{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        
+        
+    
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        grid-auto-rows: minmax(100px, auto);
+        width: 100%;
+        padding: 20px;
+        
+        
+    
+    }
+    .main article {
+        max-width: 300px;
+    
+    }
+    .main article h1{
+        font-size: 1.5rem
+    }
+    .main-footer{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: start;
+        justify-items: center;
+        background: #333;
+        color: white;
+        padding: 20px;
+        grid-gap: 1em
+}
+.last-ele-footer{
+    grid-column: 1/4
+}
+
+}
